@@ -11,12 +11,12 @@ public record CurrentWeatherDto(String time,
                                 double latitude,
                                 double longitude,
                                 List<Daily> dailyForecast) {
-    public record Daily(String date,                        // e.g. "2026-01-17"
+    public record Daily(String date,
                         double temperatureMax,
                         double temperatureMin,
                         double apparentTemperatureMax,
                         double apparentTemperatureMin,
                         int weatherCode,
-                        double precipitationProbabilityMax, // 0–100%
+                        double precipitationProbabilityMax,
                         double precipitationSum){}
 }
